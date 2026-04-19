@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VedaWays — Curated Journeys Across India</title>
+    <meta
+      name="description"
+      content="Luxury curated travel experiences across India. Custom itineraries, private tours, and unforgettable journeys crafted for discerning travelers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-veda">Veda</span><span class="logo-ways">Ways</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#journeys">Journeys</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#plan" class="btn-plan-nav">Plan My Trip</a>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-video-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Since 2024 · Private India Specialists</p>
+        <h1 class="hero-title">
+          Curated Journeys<br />
+          <em>Across India</em>
+        </h1>
+        <p class="hero-subtitle">Crafted for the Discerning Traveler</p>
+        <div class="hero-divider"></div>
+        <p class="hero-desc">
+          From palace courts of Rajasthan to the backwaters of Kerala — we craft
+          private journeys that reveal India's soul, not just its sights.
+        </p>
+        <div class="hero-ctas">
+          <a href="#journeys" class="btn-primary">Explore Journeys</a>
+          <a href="#plan" class="btn-secondary">Plan My Trip</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">1,200+</span
+            ><span class="stat-label">Happy Travelers</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">15+</span
+            ><span class="stat-label">Destinations</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">4.9★</span
+            ><span class="stat-label">Avg Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scroll to Discover</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span>Rajasthan</span><span class="dot">◆</span>
+        <span>Kerala Backwaters</span><span class="dot">◆</span>
+        <span>Golden Triangle</span><span class="dot">◆</span>
+        <span>Varanasi</span><span class="dot">◆</span>
+        <span>Ranthambore Safari</span><span class="dot">◆</span>
+        <span>Khajuraho</span><span class="dot">◆</span>
+        <span>Odisha Tribal Tours</span><span class="dot">◆</span>
+        <span>Udaipur Palaces</span><span class="dot">◆</span>
+        <span>Rajasthan</span><span class="dot">◆</span>
+        <span>Kerala Backwaters</span><span class="dot">◆</span>
+        <span>Golden Triangle</span><span class="dot">◆</span>
+        <span>Varanasi</span><span class="dot">◆</span>
+        <span>Ranthambore Safari</span><span class="dot">◆</span>
+        <span>Khajuraho</span><span class="dot">◆</span>
+        <span>Odisha Tribal Tours</span><span class="dot">◆</span>
+        <span>Udaipur Palaces</span><span class="dot">◆</span>
+      </div>
+    </div>
+
+    <!-- ===== ONBOARDING / PLAN MY TRIP ===== -->
+    <section class="plan-section" id="plan">
+      <div class="container">
+        <div class="plan-inner">
+          <div class="plan-text">
+            <p class="section-eyebrow">Build Your Journey</p>
+            <h2 class="section-title">
+              Where Shall We<br /><em>Take You?</em>
+            </h2>
+            <p class="section-desc">
+              Answer four simple questions and we'll craft a personalized
+              journey just for you. No templates. No compromises.
+            </p>
+            <div class="plan-features">
+              <div class="plan-feat">
+                <span class="feat-icon">✦</span>Luxury 4★ &amp; 5★
+                accommodations
+              </div>
+              <div class="plan-feat">
+                <span class="feat-icon">✦</span>Spanish-speaking expert guides
+              </div>
+              <div class="plan-feat">
+                <span class="feat-icon">✦</span>Private air-conditioned
+                transport
+              </div>
+              <div class="plan-feat">
+                <span class="feat-icon">✦</span>24/7 concierge on WhatsApp
+              </div>
+            </div>
+          </div>
+          <div class="plan-form-wrap">
+            <form class="plan-form" id="planForm">
+              <div class="step active" data-step="1">
+                <h3>What brings you to India?</h3>
+                <div class="option-grid">
+                  <label class="option-card"
+                    ><input type="radio" name="interest" value="luxury" /><span
+                      class="opt-icon"
+                      >👑</span
+                    ><span>Luxury Vacation</span></label
+                  >
+                  <label class="option-card"
+                    ><input type="radio" name="interest" value="culture" /><span
+                      class="opt-icon"
+                      >🏛️</span
+                    ><span>Cultural Exploration</span></label
+                  >
+                  <label class="option-card"
+                    ><input
+                      type="radio"
+                      name="interest"
+                      value="wildlife"
+                    /><span class="opt-icon">🐅</span
+                    ><span>Wildlife Safari</span></label
+                  >
+                  <label class="option-card"
+                    ><input
+                      type="radio"
+                      name="interest"
+                      value="spiritual"
+                    /><span class="opt-icon">🕉️</span
+                    ><span>Spiritual Journey</span></label
+                  >
+                  <label class="option-card"
+                    ><input
+                      type="radio"
+                      name="interest"
+                      value="honeymoon"
+                    /><span class="opt-icon">🌹</span
+                    ><span>Honeymoon</span></label
+                  >
+                  <label class="option-card"
+                    ><input type="radio" name="interest" value="offbeat" /><span
+                      class="opt-icon"
+                      >🌿</span
+                    ><span>Offbeat India</span></label
+                  >
+                </div>
+                <button type="button" class="btn-next" onclick="nextStep(1)">
+                  Continue →
+                </button>
+              </div>
+              <div class="step" data-step="2">
+                <h3>How long is your journey?</h3>
+                <div class="option-grid">
+                  <label class="option-card"
+                    ><input type="radio" name="duration" value="5-7" /><span
+                      class="opt-icon"
+                      >🗓️</span
+                    ><span>5–7 Days</span></label
+                  >
+                  <label class="option-card"
+                    ><input type="radio" name="duration" value="8-12" /><span
+                      class="opt-icon"
+                      >🗓️</span
+                    ><span>8–12 Days</span></label
+                  >
+                  <label class="option-card"
+                    ><input type="radio" name="duration" value="12+" /><span
+                      class="opt-icon"
+                      >🗓️</span
+                    ><span>12+ Days</span></label
+                  >
+                </div>
+                <button type="button" class="btn-next" onclick="nextStep(2)">
+                  Continue →
+                </button>
+                <button type="button" class="btn-back" onclick="prevStep(2)">
+                  ← Back
+                </button>
+              </div>
+              <div class="step" data-step="3">
+                <h3>What's your travel budget?</h3>
+                <div class="budget-slider-wrap">
+                  <input
+                    type="range"
+                    id="budget"
+                    min="30000"
+                    max="300000"
+                    step="10000"
+                    value="80000"
+                    class="budget-slider"
+                  />
+                  <div class="budget-display">
+                    ₹<span id="budgetVal">80,000</span> per person
+                  </div>
+                </div>
+                <div class="option-grid">
+                  <label class="option-card budget-opt"
+                    ><input
+                      type="radio"
+                      name="budget_range"
+                      value="budget"
+                    /><span>₹30K–₹60K</span><small>Value</small></label
+                  >
+                  <label class="option-card budget-opt"
+                    ><input
+                      type="radio"
+                      name="budget_range"
+                      value="premium"
+                    /><span>₹60K–₹1L</span><small>Premium</small></label
+                  >
+                  <label class="option-card budget-opt"
+                    ><input
+                      type="radio"
+                      name="budget_range"
+                      value="luxury"
+                    /><span>₹1L+</span><small>Luxury</small></label
+                  >
+                </div>
+                <button type="button" class="btn-next" onclick="nextStep(3)">
+                  Continue →
+                </button>
+                <button type="button" class="btn-back" onclick="prevStep(3)">
+                  ← Back
+                </button>
+              </div>
+              <div class="step" data-step="4">
+                <h3>Your details</h3>
+                <div class="form-fields">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="field"
+                    id="fname"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    class="field"
+                    id="femail"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    placeholder="WhatsApp Number"
+                    class="field"
+                    id="fphone"
+                  />
+                  <select class="field" id="fnationality">
+                    <option value="">Select Nationality</option>
+                    <option>Indian</option>
+                    <option>Spanish</option>
+                    <option>British</option>
+                    <option>American</option>
+                    <option>French</option>
+                    <option>German</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn-submit">
+                  Craft My Journey ✦
+                </button>
+                <button type="button" class="btn-back" onclick="prevStep(4)">
+                  ← Back
+                </button>
+              </div>
+              <div class="step success-step" data-step="5">
+                <div class="success-anim">✦</div>
+                <h3>Crafting Your Journey…</h3>
+                <p>
+                  Our team will reach out within 24 hours on WhatsApp with your
+                  personalized itinerary.
+                </p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED JOURNEYS ===== -->
+    <section class="journeys-section" id="journeys">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Our Curated Collection</p>
+          <h2 class="section-title">Signature <em>Journeys</em></h2>
+          <p class="section-desc">
+            Every itinerary is built around authentic experiences, not tourist
+            checkboxes.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">
+            All Journeys
+          </button>
+          <button class="filter-btn" data-filter="luxury">Luxury</button>
+          <button class="filter-btn" data-filter="cultural">Cultural</button>
+          <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+          <button class="filter-btn" data-filter="spiritual">Spiritual</button>
+          <button class="filter-btn" data-filter="offbeat">Offbeat</button>
+        </div>
+
+        <!-- Journey Cards -->
+        <div class="journeys-grid" id="journeysGrid">
+          <article class="journey-card" data-category="cultural luxury">
+            <div
+              class="card-image"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80&quot;);
+              "
+            >
+              <span class="card-badge">Popular</span>
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Cultural</span><span class="tag">Luxury</span>
+              </div>
+              <h3 class="card-title">Golden Triangle Experience</h3>
+              <p class="card-route">Delhi → Agra → Jaipur</p>
+              <div class="card-meta">
+                <span>⏱ 6 Days / 5 Nights</span>
+                <span>🏨 4★ Hotels</span>
+              </div>
+              <div class="card-includes">Guide · Transport · Entries</div>
+              <div class="card-footer">
+                <div class="card-price">
+                  ₹45,000 – ₹75,000<small>/person</small>
+                </div>
+                <div class="card-actions">
+                  <a href="itinerary.html?id=golden-triangle" class="btn-view"
+                    >View</a
+                  >
+                  <a href="#plan" class="btn-customize">Customize</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="journey-card" data-category="luxury">
+            <div
+              class="card-image"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&q=80&quot;);
+              "
+            >
+              <span class="card-badge badge-luxury">Luxury</span>
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Luxury</span><span class="tag">Palaces</span>
+              </div>
+              <h3 class="card-title">Royal Rajasthan Experience</h3>
+              <p class="card-route">
+                Delhi → Mandawa → Jaisalmer → Udaipur → Jaipur → Agra
+              </p>
+              <div class="card-meta">
+                <span>⏱ 10–12 Days</span>
+                <span>🏨 Heritage Hotels</span>
+              </div>
+              <div class="card-includes">Guide · Transport · Camel Safari</div>
+              <div class="card-footer">
+                <div class="card-price">
+                  ₹95,000 – ₹1,60,000<small>/person</small>
+                </div>
+                <div class="card-actions">
+                  <a href="itinerary.html?id=royal-rajasthan" class="btn-view"
+                    >View</a
+                  >
+                  <a href="#plan" class="btn-customize">Customize</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="journey-card" data-category="wildlife">
+            <div
+              class="card-image"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=600&q=80&quot;);
+              "
+            >
+              <span class="card-badge badge-wild">Wildlife</span>
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Wildlife</span><span class="tag">Safari</span>
+              </div>
+              <h3 class="card-title">Golden Triangle + Ranthambore Safari</h3>
+              <p class="card-route">Delhi → Ranthambore → Agra → Jaipur</p>
+              <div class="card-meta">
+                <span>⏱ 8 Days</span>
+                <span>🐅 Tiger Reserve</span>
+              </div>
+              <div class="card-includes">
+                Safari · Guide · Transport · Hotels
+              </div>
+              <div class="card-footer">
+                <div class="card-price">
+                  ₹60,000 – ₹1,00,000<small>/person</small>
+                </div>
+                <div class="card-actions">
+                  <a href="itinerary.html?id=ranthambore" class="btn-view"
+                    >View</a
+                  >
+                  <a href="#plan" class="btn-customize">Customize</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="journey-card" data-category="spiritual cultural">
+            <div
+              class="card-image"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1561361058-c24e02af6b55?w=600&q=80&quot;);
+              "
+            >
+              <span class="card-badge badge-spirit">Spiritual</span>
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Spiritual</span
+                ><span class="tag">Cultural</span>
+              </div>
+              <h3 class="card-title">Sacred Varanasi & Khajuraho</h3>
+              <p class="card-route">Varanasi → Khajuraho → Orchha</p>
+              <div class="card-meta">
+                <span>⏱ 7 Days</span>
+                <span>🕉️ Ganga Aarti</span>
+              </div>
+              <div class="card-includes">Guide · Transport · Boat ride</div>
+              <div class="card-footer">
+                <div class="card-price">
+                  ₹40,000 – ₹70,000<small>/person</small>
+                </div>
+                <div class="card-actions">
+                  <a href="itinerary.html?id=varanasi" class="btn-view">View</a>
+                  <a href="#plan" class="btn-customize">Customize</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="journey-card" data-category="luxury cultural">
+            <div
+              class="card-image"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80&quot;);
+              "
+            >
+              <span class="card-badge badge-luxury">South India</span>
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Luxury</span
+                ><span class="tag">Backwaters</span>
+              </div>
+              <h3 class="card-title">South India Luxury Circuit</h3>
+              <p class="card-route">
+                Chennai → Mahabalipuram → Madurai → Munnar → Kerala
+              </p>
+              <div class="card-meta">
+                <span>⏱ 12–14 Days</span>
+                <span>🛶 Houseboat</span>
+              </div>
+              <div class="card-includes">Houseboat · Guide · 5★ Hotels</div>
+              <div class="card-footer">
+                <div class="card-price">
+                  ₹1,20,000 – ₹2,00,000<small>/person</small>
+                </div>
+                <div class="card-actions">
+                  <a href="itinerary.html?id=south-india" class="btn-view"
+                    >View</a
+                  >
+                  <a href="#plan" class="btn-customize">Customize</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="journey-card" data-category="offbeat cultural">
+            <div
+              class="card-image"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?w=600&q=80&quot;);
+              "
+            >
+              <span class="card-badge badge-off">Offbeat</span>
+              <div class="card-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Offbeat</span><span class="tag">Tribal</span>
+              </div>
+              <h3 class="card-title">Odisha Tribal Heritage Tour</h3>
+              <p class="card-route">
+                Bhubaneswar → Konark → Tribal Markets → Chilika
+              </p>
+              <div class="card-meta">
+                <span>⏱ 10–11 Days</span>
+                <span>🌿 Unique culture</span>
+              </div>
+              <div class="card-includes">Expert Guide · Cultural Immersion</div>
+              <div class="card-footer">
+                <div class="card-price">
+                  ₹1,30,000 – ₹2,20,000<small>/person</small>
+                </div>
+                <div class="card-actions">
+                  <a href="itinerary.html?id=odisha" class="btn-view">View</a>
+                  <a href="#plan" class="btn-customize">Customize</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="journeys-footer">
+          <a href="journeys.html" class="btn-primary">View All Journeys</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY VEDAWAYS ===== -->
+    <section class="why-section">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-text">
+            <p class="section-eyebrow">Why VedaWays</p>
+            <h2 class="section-title">
+              India Through<br /><em>Expert Eyes</em>
+            </h2>
+            <p class="section-desc">
+              We are not a booking platform. We are your personal India
+              specialists — with deep local knowledge, trusted partners, and an
+              obsession for detail.
+            </p>
+            <a href="#about" class="btn-outline">Our Story</a>
+          </div>
+          <div class="why-features">
+            <div class="why-feat">
+              <div class="feat-num">01</div>
+              <div class="feat-content">
+                <h4>Truly Private Journeys</h4>
+                <p>
+                  No group tours. Your vehicle, your guide, your pace — always
+                  private.
+                </p>
+              </div>
+            </div>
+            <div class="why-feat">
+              <div class="feat-num">02</div>
+              <div class="feat-content">
+                <h4>Multilingual Expert Guides</h4>
+                <p>
+                  Spanish, English, French-speaking certified guides with 10+
+                  years experience.
+                </p>
+              </div>
+            </div>
+            <div class="why-feat">
+              <div class="feat-num">03</div>
+              <div class="feat-content">
+                <h4>Full Trip Management</h4>
+                <p>
+                  Hotels, transport, entries, visas, dining — we handle
+                  everything so you just travel.
+                </p>
+              </div>
+            </div>
+            <div class="why-feat">
+              <div class="feat-num">04</div>
+              <div class="feat-content">
+                <h4>24/7 WhatsApp Support</h4>
+                <p>
+                  Vishnu Verma and team are always one message away, before and
+                  during your trip.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DESTINATIONS ===== -->
+    <section class="destinations-section" id="destinations">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Explore India</p>
+          <h2 class="section-title">Choose Your <em>Destination</em></h2>
+        </div>
+        <div class="dest-grid">
+          <a
+            href="destinations/rajasthan.html"
+            class="dest-card dest-large"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&q=80&quot;);
+            "
+          >
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+              <h3>Rajasthan</h3>
+              <p>Land of Royals</p>
+            </div>
+          </a>
+          <a
+            href="destinations/delhi.html"
+            class="dest-card"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&q=80&quot;);
+            "
+          >
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+              <h3>Delhi</h3>
+              <p>Capital Grandeur</p>
+            </div>
+          </a>
+          <a
+            href="destinations/kerala.html"
+            class="dest-card"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80&quot;);
+            "
+          >
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+              <h3>Kerala</h3>
+              <p>God's Own Country</p>
+            </div>
+          </a>
+          <a
+            href="destinations/varanasi.html"
+            class="dest-card"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1561361058-c24e02af6b55?w=600&q=80&quot;);
+            "
+          >
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+              <h3>Varanasi</h3>
+              <p>Soul of India</p>
+            </div>
+          </a>
+          <a
+            href="destinations/odisha.html"
+            class="dest-card"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?w=600&q=80&quot;);
+            "
+          >
+            <div class="dest-overlay"></div>
+            <div class="dest-info">
+              <h3>Odisha</h3>
+              <p>Hidden Gem</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Traveler Stories</p>
+          <h2 class="section-title">Voices of Our <em>Guests</em></h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "VedaWays crafted an absolutely flawless 10-day Rajasthan journey.
+              The attention to detail — from heritage hotel selections to our
+              Spanish-speaking guide — was extraordinary."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">MR</div>
+              <div>
+                <strong>María Rodríguez</strong><small>Madrid, Spain</small>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card testi-featured">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "From the Taj Mahal at sunrise to the tiger sighting in
+              Ranthambore — this was the trip of a lifetime. Vishnu and team
+              made everything seamless and magical."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">JW</div>
+              <div><strong>James Wilson</strong><small>London, UK</small></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">
+              "The Odisha tribal tour was unlike anything I've experienced. A
+              truly off-the-beaten-path adventure that only local experts could
+              deliver. Highly recommend VedaWays."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar">AL</div>
+              <div>
+                <strong>Anne Laurent</strong><small>Paris, France</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrap">
+            <div
+              class="about-img"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80&quot;);
+              "
+            ></div>
+            <div class="about-badge">
+              <span class="badge-num">10+</span>
+              <span class="badge-txt">Years in<br />Travel</span>
+            </div>
+          </div>
+          <div class="about-text">
+            <p class="section-eyebrow">Our Story</p>
+            <h2 class="section-title">Vishnu Verma &<br /><em>VedaWays</em></h2>
+            <p>
+              Born from a deep love of India's stories, VedaWays was founded by
+              Vishnu Verma — a passionate travel expert who has spent over a
+              decade guiding international travelers through India's most
+              remarkable landscapes and cultures.
+            </p>
+            <p>
+              We believe travel should transform you. Every journey we design is
+              a carefully crafted narrative — with the right pace, the right
+              places, and the right people to bring India's soul to life.
+            </p>
+            <div class="about-highlights">
+              <div class="ah-item">
+                <span>🇮🇳</span> India-based local experts
+              </div>
+              <div class="ah-item">
+                <span>🗣️</span> English, Spanish, French
+              </div>
+              <div class="ah-item">
+                <span>🏅</span> Certified Tour Operators
+              </div>
+            </div>
+            <a href="about.html" class="btn-primary">Meet Our Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-text">
+            <p class="section-eyebrow">Get In Touch</p>
+            <h2 class="section-title">
+              Let's Plan Your<br /><em>India Journey</em>
+            </h2>
+            <p>
+              Whether you have a trip in mind or just want to explore
+              possibilities, reach out — we'd love to hear from you.
+            </p>
+            <div class="contact-methods">
+              <a
+                href="https://wa.me/91XXXXXXXXXX"
+                class="contact-method whatsapp"
+              >
+                <span class="cm-icon">💬</span>
+                <div>
+                  <strong>WhatsApp</strong><small>Chat with us now</small>
+                </div>
+              </a>
+              <a href="mailto:hello@vedaways.com" class="contact-method email">
+                <span class="cm-icon">✉️</span>
+                <div>
+                  <strong>Email</strong><small>hello@vedaways.com</small>
+                </div>
+              </a>
+              <div class="contact-method phone">
+                <span class="cm-icon">📞</span>
+                <div><strong>Phone</strong><small>+91 XXXXX XXXXX</small></div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" class="field" required />
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="field"
+              required
+            />
+            <input type="tel" placeholder="WhatsApp Number" class="field" />
+            <select class="field">
+              <option value="">I'm interested in…</option>
+              <option>Golden Triangle</option>
+              <option>Royal Rajasthan</option>
+              <option>Ranthambore Safari</option>
+              <option>Varanasi Tour</option>
+              <option>South India</option>
+              <option>Custom Journey</option>
+            </select>
+            <textarea
+              placeholder="Tell us about your dream trip…"
+              class="field textarea"
+              rows="4"
+            ></textarea>
+            <button type="submit" class="btn-submit">Send Enquiry ✦</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-veda">Veda</span
+              ><span class="logo-ways">Ways</span>
+            </div>
+            <p>
+              Curated Journeys Across India — Crafted for the Discerning
+              Traveler.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">IG</a>
+              <a href="#" class="social-link">FB</a>
+              <a href="#" class="social-link">YT</a>
+              <a href="#" class="social-link">WA</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Journeys</h4>
+            <a href="#">Golden Triangle</a>
+            <a href="#">Royal Rajasthan</a>
+            <a href="#">Ranthambore Safari</a>
+            <a href="#">Varanasi Tour</a>
+            <a href="#">South India</a>
+          </div>
+          <div class="footer-col">
+            <h4>Destinations</h4>
+            <a href="#">Rajasthan</a>
+            <a href="#">Delhi</a>
+            <a href="#">Kerala</a>
+            <a href="#">Varanasi</a>
+            <a href="#">Odisha</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Who We Are</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="footer-col newsletter-col">
+            <h4>Stay Inspired</h4>
+            <p>Travel stories &amp; India insights in your inbox.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" class="nl-field" />
+              <button type="submit" class="nl-btn">→</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 VedaWays by Vishnu Verma. All rights reserved.</p>
+          <p>Designed with ♥ for India lovers worldwide.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Sticky Button -->
+    <a
+      href="https://wa.me/91XXXXXXXXXX"
+      class="whatsapp-float"
+      target="_blank"
+      title="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+    </a>
+
+    <script src="app.js"></script>
+  </body>
+</html>
